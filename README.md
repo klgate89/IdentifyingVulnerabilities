@@ -1,59 +1,75 @@
 
-<h1> Analyzing Network Structure & Security </h1>
+<h1> Vulnerability Assessment Report </h1>
+1st January 20XX
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
-<h2>Description</h2>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed nunc at velit maximus lobortis. Nulla et tristique quam. Quisque euismod dapibus lectus, eget cursus purus gravida eget. Mauris id eros vel metus hendrerit condimentum. Nunc fermentum nisl at dui pharetra, sed pellentesque mi cursus. In dapibus enim eu libero ultricies, nec lacinia sem pellentesque. Nulla lobortis semper tristique. Curabitur aliquet euismod nisl, eget consequat tellus. Vivamus laoreet consectetur metus, sit amet sollicitudin sem maximus sit amet. Fusce eu justo id enim aliquet consequat. Sed eu diam ac urna eleifend egestas. 
+<h2>System Description</h2>
+The server hardware consists of a powerful CPU processor and 128GB of memory. It runs on the latest version of Linux operating system and hosts a MySQL database management system. It is configured with a stable network connection using IPv4 addresses and interacts with other servers on the network. Security measures include SSL/TLS encrypted connections.
 <br />
 
 
-<h2>Languages and Utilities Used</h2>
+<h2>Scope</h2>
+The scope of this vulnerability assessment relates to the current access controls of the system.
+The assessment will cover a period of three months, from June 20XX to August 20XX. NIST SP
+800-30 Rev. 1 is used to guide the risk analysis of the information system.
 
-- <b>Lorem ipsum</b> 
-- <b>Lorem ipsum</b>
+<h2>Purpose</h2>
+The database server is a centralized computer system that stores and manages large amounts of data. The server is used to store customer, campaign, and analytic data that can later be analyzed to track performance and personalize marketing efforts. It is critical to secure the system because of its regular use for marketing operations.
 
-<h2>Environments Used </h2>
+<br>
+<h2>Risk Assessment</h2>
+<!DOCTYPE html>
+<html>
+<head>
 
-- <b>Windows 10</b> (21H2)
+</head>
+<body>
 
-<h2>Program walk-through:</h2>
+<table>
+  <tr>
+    <th><center>Threat source</center></th>
+    <th><center>Threat event</center></th>
+    <th><center>Likelihood</center></th>
+    <th><center>Severity</center></th>
+    <th><center>Risk</center></th>
+  </tr>
+  <tr>
+    <td>Hacker</td>
+    <td>Obtain sensitive information via
 
-<p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Enter the number of passes: <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
+exfiltration</td>
+    <td>3</td>
+    <td>3</td>
+    <td>9</td>
+  </tr>
+  <tr>
+    <td>Employee</td>
+    <td>Disrupt mission-critical operations</td>
+    <td>2</td>
+    <td>3</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Customer</td>
+    <td>Alter/Delete critical information</td>
+    <td>1</td>
+    <td>3</td>
+    <td>3</td>
+  </tr>
+</table>
 
-<!--
- ```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
---!>
+</body>
+</html>
+<br>
+<h2>Approach</h2>
+Risks that were measured considered the data storage and management procedures of the
+business. Potential threat sources and events were determined using the likelihood of a
+security incident given the open access permissions of the information system. The severity of
+potential incidents were weighed against the impact on day-to-day operational needs.
+<br>
+<h2>Remediation Strategy</h2>
+Implementation of authentication, authorization, and auditing mechanisms to ensure that only
+authorized users access the database server. This includes using strong passwords, role-based
+access controls, and multi-factor authentication to limit user privileges. Encryption of data in
+motion using TLS instead of SSL. IP allow-listing to corporate offices to prevent random users
+from the internet from connecting to the database.
+
